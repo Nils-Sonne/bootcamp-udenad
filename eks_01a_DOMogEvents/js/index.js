@@ -6,28 +6,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	let decreaseBtn = document.querySelector("#btn-count-decrease");
 	let increaseBtn = document.querySelector("#btn-count-increase");
-	let tekstCountElement = document.querySelector("#text-count");
-	let count = 5;
+	let textCountElement = document.querySelector("#text-count");
+	let number = 5;
+	let min = 0;
+	let max = 15;
 
-	//  Function counter(){
-	// 	tekstcountelement.textContent = count;
-	// }
+
+
+
+
+	 function updateNumber(){
+		textCountElement.textContent = number;
+	 }
+
+	 updateNumber();
 
 	decreaseBtn.addEventListener("click", () => {
-		if (count>0){
-		count--;
-		tekstCountElement.innerHTML = count;
-		};
+		if (number> min){
+		number--;
+		updateNumber ();
+		}
 	
 	  });
 
 
 	  increaseBtn.addEventListener("click", () => {
 		
-		if (count<10){
-		count++;
-		tekstCountElement.innerHTML = count;
-		};
+		if (number< max){
+		number++;
+		updateNumber ();
+		}
 
 	  });
 
