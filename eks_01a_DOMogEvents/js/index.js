@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	let decreaseBtn = document.querySelector("#btn-count-decrease");
 	let increaseBtn = document.querySelector("#btn-count-increase");
-	let tekstcountelement = document.querySelector("#text-count");
+	let tekstCountElement = document.querySelector("#text-count");
 	let count = 5;
 
-	// Function count(){
-	// 	tekstcountelement.innerHTML = count;
+	//  Function counter(){
+	// 	tekstcountelement.textContent = count;
 	// }
 
 	decreaseBtn.addEventListener("click", () => {
 		if (count>0){
 		count--;
-		tekstcountelement.innerHTML = count;
+		tekstCountElement.innerHTML = count;
 		};
 	
 	  });
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		
 		if (count<10){
 		count++;
-		tekstcountelement.innerHTML = count;
+		tekstCountElement.innerHTML = count;
 		};
 
 	  });
