@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	var hilsenFraOle = hils ("Ole");
 	console.log(hilsenFraOle);
 
+let elever []
 
 }); 
 
